@@ -1,0 +1,28 @@
+{
+  "name": "monitor",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dominictarr/monitor",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/monitor.git"
+  },
+  "dependencies": {
+    "ecstatic": "~0.1.6",
+    "mux-demux": "~3.3.2",
+    "smoothie-stream": "~0.1",
+    "shoe": "~0.0",
+    "reconnect": "~0.1",
+    "h": "~0.1.0",
+    "domready": "~0.2.11",
+    "through": "~1.0.0",
+    "probe-stream": "~0.0"
+  },
+  "devDependencies": {
+    "tap": "0.3.0"
+  },
+  "scripts": {
+    "test": "tap test"
+  },
+  "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "license": "MIT"
+}
