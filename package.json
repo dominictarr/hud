@@ -1,15 +1,15 @@
 {
-  "name": "monitor",
+  "name": "hud",
   "version": "0.0.0",
-  "homepage": "https://github.com/dominictarr/monitor",
+  "homepage": "https://github.com/dominictarr/hud",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/monitor.git"
+    "url": "git://github.com/dominictarr/hud.git"
   },
   "dependencies": {
     "ecstatic": "~0.1.6",
     "mux-demux": "~3.3.2",
-    "smoothie-stream": "~0.1",
+    "smoothie-stream": "~1.0",
     "shoe": "~0.0",
     "reconnect": "~0.1",
     "h": "~0.1.0",
@@ -18,7 +18,6 @@
     "probe-stream": "~0.0"
   },
   "devDependencies": {
-    "tap": "0.3.0"
   },
   "scripts": {
     "test": "tap test"

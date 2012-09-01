@@ -1,9 +1,9 @@
-# monitor
+# HUD - Head Up Display
 
 pre-configured graphing for monitoring node stuff in real-time.
 
 ``` js
-var monitor = require('monitor')()
+var hud = require('hud')()
 var from = require('from') 
 var os   = require('os')
 
@@ -22,19 +22,19 @@ var osStream =
     setTimeout(next, 1e3)
   })
 
-osStream.pipe(monitor.createStream('memory'))
+osStream.pipe(hud.createStream('memory'))
 
 //start a server on local host...
-monitor.listen(6464)
+hud.listen(6464)
 ```
 
 now, open `http://localhost:6464` in your browser!
 
 ``` js
 
-//monitor can even monitor it self!
+//hud can even monitor it self!
 //using probe-stream
-monitor.probe.pipe(monitor.createStream('monitor'))
+hud.probe.pipe(hud.createStream('monitor'))
 
 ```
 
@@ -43,7 +43,7 @@ I recommend using [probe-stream](https://github.com/dominictarr/probe-stream)
 
 ## How
 
-`monitor` uses [smoothie-stream](https://github.com/dominictarr/smoothie-stream)
+`hud` uses [smoothie-stream](https://github.com/dominictarr/smoothie-stream)
 it will graph the properties that are numbers.
 
 ## License
